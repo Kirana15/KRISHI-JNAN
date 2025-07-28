@@ -72,22 +72,9 @@ Displays crop names with predicted modal prices at harvest.
 ├── README.md                         
 ├── requirements.txt
 
-# requirements
-streamlit==1.35.0
+##  Why This Project?
 
-pandas
-
-numpy
-
-tensorflow==2.14.0
-
-scikit-learn==1.3.2
-
-openpyxl==3.1.2
-
-joblib==1.3.2
-
-python-dateutil==2.9.0
+Agriculture is the backbone of India, but most farmers lack access to timely data to guide their sowing decisions. *Krishi-Jñāna* is an initiative to bridge that gap by offering a free, intelligent decision-support tool to make agriculture more data-driven and profitable.
 
 Tap on 'Open in Streamlikt' button to use the web application
 
