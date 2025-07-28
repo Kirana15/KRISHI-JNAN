@@ -54,8 +54,8 @@ def load_assets():
     crop_encoder = joblib.load("models/crop_encoder.pkl")
     district_encoder = joblib.load("models/district_encoder.pkl")
     harvest_month_encoder = joblib.load("models/harvest_month_encoder.pkl")
-    mapping_df = pd.read_excel(r"D:\projects\crop_price_pridicton\District_to_Base_District_Mapping.xlsx")
-    price_df = pd.read_excel(r"D:\projects\crop_price_pridicton\price_prediction_avg.xlsx")
+    mapping_df = pd.read_excel("District_Mapping.xlsx")
+    price_df = pd.read_excel("Commodities_price.xlsx")
     price_df['Price Date'] = pd.to_datetime(price_df['Price Date'])
     return model, scaler, crop_encoder, district_encoder, harvest_month_encoder, mapping_df, price_df
 
