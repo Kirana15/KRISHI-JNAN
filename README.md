@@ -44,26 +44,29 @@ The model returns a predicted modal price at harvest time.
 The system prints a list of recommended crops with
 crop-price-prediction/
 
-├── models/                             
+crop-price-prediction/
+│
+├── models/                             # 🧠 Trained ML models and encoders
 │   ├── unified_lstm_model.h5
-
 │   ├── crop_encoder.pkl
-
 │   ├── district_encoder.pkl
-
 │   └── price_scaler.pkl
-
 │
-├──Commodities_price.xlsx   
-├── Crop.xlsx                
-│── District_Mapping.xlsx
+├── data/                               # 📊 Excel datasets
+│   ├── Commodities_price.xlsx
+│   ├── Crop.xlsx
+│   └── District_Mapping.xlsx
 │
-
-├── Train_model.py              
-├── model.py       
-├── crop_recommendations.py     
+├── scripts/                            # ⚙️ Core logic scripts
+│   ├── train_model.py                  # LSTM model training
+│   ├── predict_prices.py               # Predict prices for recommended crops
+│   ├── test_model_all_inputs.py        # (Optional) Test predictions on all inputs
+│   └── crop_recommendation.py          # Crop suggestion logic based on district/soil/month
 │
-
-├── requirements.txt                  
-├── README.md                                                 
-
+├── app/                                # 🌐 (Optional) Streamlit UI if built
+│   └── app.py
+│
+├── README.md                           # 📘 Project overview
+├── requirements.txt                    # 📦 Python dependencies
+├── runtime.txt                         # 🐍 Python version lock for Streamlit Cloud
+├── .gitignore                          # 🚫 Ignore model/temp/cache files
