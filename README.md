@@ -45,28 +45,31 @@ The system prints a list of recommended crops with
 crop-price-prediction/
 
 crop-price-prediction/
-│
-├── models/                             # 🧠 Trained ML models and encoders
-│   ├── unified_lstm_model.h5
-│   ├── crop_encoder.pkl
-│   ├── district_encoder.pkl
-│   └── price_scaler.pkl
-│
-├── data/                               # 📊 Excel datasets
-│   ├── Commodities_price.xlsx
-│   ├── Crop.xlsx
-│   └── District_Mapping.xlsx
-│
-├── scripts/                            # ⚙️ Core logic scripts
-│   ├── train_model.py                  # LSTM model training
-│   ├── predict_prices.py               # Predict prices for recommended crops
-│   ├── test_model_all_inputs.py        # (Optional) Test predictions on all inputs
-│   └── crop_recommendation.py          # Crop suggestion logic based on district/soil/month
-│
-├── app/                                # 🌐 (Optional) Streamlit UI if built
-│   └── app.py
-│
-├── README.md                           # 📘 Project overview
-├── requirements.txt                    # 📦 Python dependencies
-├── runtime.txt                         # 🐍 Python version lock for Streamlit Cloud
-├── .gitignore                          # 🚫 Ignore model/temp/cache files
+
+
+├── models/    
+   ├── unified_lstm_model.h5
+   
+   ├── crop_encoder.pkl
+   
+   ├── district_encoder.pkl
+   
+   └── price_scaler.pkl
+
+├── data/ 
+   ├── Commodities_price.xlsx
+   
+   ├── Crop.xlsx
+   
+   └── District_Mapping.xlsx
+
+├── scripts/                            
+   ├── train_model.py  
+   
+   ├── predict_prices.py
+   
+   └── crop_recommendation.py         
+                             
+├── README.md                         
+├── requirements.txt
+
