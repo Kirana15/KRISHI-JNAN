@@ -54,14 +54,16 @@ crop-price-prediction/
 │   └── price_scaler.pkl
 
 │
-├──Commodities_price.xlsx                              
-│____ price_prediction_avg.xlsx
-│   └── District_to_Base_District_Mapping.xlsx
+├──Commodities_price.xlsx   
+├── Crop.xlsx                
+│── District_Mapping.xlsx
 │
-├── crop_recommendation.py              
-├── predict_recommended_prices.py       
-├── test_model_across_all_inputs.py     
+
+├── Train_model.py              
+├── model.py       
+├── crop_recommendations.py     
 │
+
 ├── requirements.txt                  
 ├── README.md                                                 
 
