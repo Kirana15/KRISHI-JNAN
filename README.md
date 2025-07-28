@@ -1,5 +1,5 @@
 # KRISHI-JNAN
-*Krishi-Jñāna* is a smart agricultural web platform designed to empower farmers by recommending the most suitable crops based on their local conditions *and* predicting expected *market prices at harvest time*. This two-stage system blends soil science and data-driven forecasting to improve farm decisions and increase profitability.
+*Krishi-Jñāna* is a smart agricultural web platform designed to empower farmers by recommending the most suitable crops based on their local conditions and predicting expected market prices at harvest time. This two-stage system blends soil science and data-driven forecasting to improve farm decisions and increase profitability.
 
 Key Features
 
@@ -85,11 +85,33 @@ Displays crop names with predicted modal prices at harvest.
                              
 ├── README.md                         
 ├── requirements.txt
-Tap on 'Open in Streamlikt' button
+
+# requirements
+streamlit==1.35.0
+
+pandas
+
+numpy
+
+tensorflow==2.14.0
+
+scikit-learn==1.3.2
+
+openpyxl==3.1.2
+
+joblib==1.3.2
+
+python-dateutil==2.9.0
+
+Tap on 'Open in Streamlikt' button to use the web application
 
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://krishi-jnan-mxvlhad4zmbyyb89js8twa.streamlit.app/)
-  
 ## Author
 Kirana BV
+
+kiranaish15@gmail.com
+
+linkedin.com/in/kirana-BV0106
+
 
 
