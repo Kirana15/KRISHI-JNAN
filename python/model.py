@@ -49,7 +49,7 @@ st.markdown(f"""
 # ===== Load Model & Assets =====
 @st.cache_resource
 def load_assets():
-    model = load_model("models/unified_lstm_model.h5")
+    model = load_model("Models/unified_lstm_model.h5")
     scaler = joblib.load("models/price_scaler.pkl")
     crop_encoder = joblib.load("models/crop_encoder.pkl")
     district_encoder = joblib.load("models/district_encoder.pkl")
