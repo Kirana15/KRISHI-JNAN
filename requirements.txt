@@ -1,0 +1,9 @@
+
+streamlit
+pandas
+numpy
+tensorflow
+scikit-learn==1.6.1
+openpyxl
+joblib
+python-dateutil
