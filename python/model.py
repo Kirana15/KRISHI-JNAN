@@ -71,7 +71,7 @@ with st.container():
         st.markdown("<h1 style='font-size:40px; margin-bottom:0;'>Krishi-Jñan</h1>", unsafe_allow_html=True)
         st.markdown("<p style='color:gray;'>Empowering Farmers with Crop and Price Intelligence</p>", unsafe_allow_html=True)
 
-st.image("assets/banner.jpg", use_container_width=True)
+st.image("assets/banner.jpg", use_column_width=True)
 
 # ===== User Input Section =====
 st.subheader("📍 Enter Farming Details")
