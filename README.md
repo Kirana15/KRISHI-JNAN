@@ -1,50 +1,63 @@
 # KRISHI-JNAN
 *Krishi-Jñāna* is a smart agricultural web platform designed to empower farmers by recommending the most suitable crops based on their local conditions *and* predicting expected *market prices at harvest time*. This two-stage system blends soil science and data-driven forecasting to improve farm decisions and increase profitability.
 
-1. Unified LSTM-based Price Prediction Model
-  A single deep learning model built using LSTM (Long Short-Term Memory) network predicts modal prices for all crops across all districts.
+Key Features
 
-2. Intelligent Crop Recommendation
-  Recommends the most suitable crops based on:
-  District
-  Soil type available in that district
-  Sowing month
-The recommendation logic comes from a curated knowledge base with maturity periods and soil compatibility.
+✅ 1. Unified LSTM Price Predictor
+A single LSTM-based model predicts modal prices for all crops across all districts, trained on historical market data.
 
-3. Predicts Prices Only for Recommended Crops
-  For each recommended crop, the system:
-  Estimates harvest month from maturity duration ,gathers the last 6 modal prices (up to harvest month), Predicts expected modal price using the trained LSTM
-  This ensures predictions are practical and contextually accurate.
+✅ 2. Contextual Crop Recommendation
+Recommends the best crops based on:
 
-4. Easy-to-Use CLI Interface
-  Users can interactively input their district, soil type, and sowing month.
-  The tool shows a list of crops with predicted harvest-time prices.
+District
 
-# How It Works
+Available soil types
 
-1️ User Input
-  The user is asked to provide three inputs via a terminal prompt:
-  District – e.g., Bengaluru Urban
-  Soil Type – Based on available soil types in that district
-  Sowing Month – e.g., Jul
-2️ Crop Recommendation
-  Once the inputs are given:
-  The system fetches all soil types available for the given district using get_soil_types_for_district.
-   Using recommend_crops, it filters crops that:
-   Grow well in that soil, suitable for the sowing month, are recognized in the training data.
-   Only recommended crops go through to the prediction stage.
+Sowing month
+Uses a curated database of crop–soil compatibility and maturity durations.
 
-4️ Price Prediction Using LSTM
+✅ 3. Predicts Only for Recommended Crops
 For each recommended crop:
-These prices, along with crop and district information, are passed into the trained LSTM model.
 
-The model returns a predicted modal price at harvest time.
+Calculates harvest month
 
-5️ Output Display
-The system prints a list of recommended crops with
-crop-price-prediction/
+Retrieves last 6 modal prices
 
-crop-price-prediction/
+Predicts harvest-time price using the trained LSTM model
+
+✅ 4. Simple Command-Line Interface (CLI)
+Users input:
+
+🌍 District (e.g., Bengaluru Urban)
+
+🌱 Soil type (available in that district)
+
+📅 Sowing month (e.g., Jul)
+
+The system responds with:
+
+🌾 Recommended crops
+
+💰 Predicted modal price at harvest
+# How It Works
+ 
+User Input:
+District, soil type, and sowing month are collected via terminal.
+
+Recommendation:
+Filters crops suited for the soil and sowing month using a knowledge base.
+
+Price Forecasting:
+For each valid crop:
+
+Calculates harvest month
+
+Fetches last 6 modal prices (before harvest)
+
+Runs prediction via LSTM model
+
+Output:
+Displays crop names with predicted modal prices at harvest.
 
 
 ├── models/    
@@ -72,4 +85,6 @@ crop-price-prediction/
                              
 ├── README.md                         
 ├── requirements.txt
+
+https://krishi-jnan-mxvlhad4zmbyyb89js8twa.streamlit.app/
 
