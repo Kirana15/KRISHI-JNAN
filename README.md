@@ -25,20 +25,6 @@ Retrieves last 6 modal prices
 
 Predicts harvest-time price using the trained LSTM model
 
-✅ 4. Simple Command-Line Interface (CLI)
-Users input:
-
-🌍 District (e.g., Bengaluru Urban)
-
-🌱 Soil type (available in that district)
-
-📅 Sowing month (e.g., Jul)
-
-The system responds with:
-
-🌾 Recommended crops
-
-💰 Predicted modal price at harvest
 # How It Works
  
 User Input:
