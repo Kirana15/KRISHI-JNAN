@@ -3,7 +3,7 @@
 import pandas as pd
 
 # Load crop recommendation data
-df = pd.read_excel(r"D:\projects\crop_price_pridicton\crop_recomendation.xlsx")
+df = pd.read_excel("Crop.xlsx")
 
 def get_soil_types_for_district(district):
     district = district.strip().capitalize()
