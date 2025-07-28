@@ -85,6 +85,11 @@ Displays crop names with predicted modal prices at harvest.
                              
 ├── README.md                         
 ├── requirements.txt
+Tap on 'Open in Streamlikt' button
 
-https://krishi-jnan-mxvlhad4zmbyyb89js8twa.streamlit.app/
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://krishi-jnan-mxvlhad4zmbyyb89js8twa.streamlit.app/)
+  
+## Author
+Kirana BV
+
 
