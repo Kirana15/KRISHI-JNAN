@@ -10,7 +10,7 @@ from sklearn.preprocessing import MinMaxScaler, LabelEncoder
 from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error, root_mean_squared_error
 
 # ==== Load and Prepare Data ====
-df = pd.read_excel(r"D:\projects\crop_price_pridicton\price_prediction_avg.xlsx")
+df = pd.read_excel("Commodities_price.xlsx")
 
 # Clean and format
 df['District Name'] = df['District Name'].astype(str).str.strip().str.title()
