@@ -50,10 +50,10 @@ st.markdown(f"""
 @st.cache_resource
 def load_assets():
     model = load_model("Models/unified_lstm_model.h5")
-    scaler = joblib.load("models/price_scaler.pkl")
-    crop_encoder = joblib.load("models/crop_encoder.pkl")
-    district_encoder = joblib.load("models/district_encoder.pkl")
-    harvest_month_encoder = joblib.load("models/harvest_month_encoder.pkl")
+    scaler = joblib.load("Models/price_scaler.pkl")
+    crop_encoder = joblib.load("Models/crop_encoder.pkl")
+    district_encoder = joblib.load("Models/district_encoder.pkl")
+    harvest_month_encoder = joblib.load("Models/harvest_month_encoder.pkl")
     mapping_df = pd.read_excel("District_Mapping.xlsx")
     price_df = pd.read_excel("Commodities_price.xlsx")
     price_df['Price Date'] = pd.to_datetime(price_df['Price Date'])
