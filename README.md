@@ -42,3 +42,26 @@ The model returns a predicted modal price at harvest time.
 
 5️ Output Display
 The system prints a list of recommended crops with
+crop-price-prediction/
+
+├── models/                             
+│   ├── unified_lstm_model.h5
+
+│   ├── crop_encoder.pkl
+
+│   ├── district_encoder.pkl
+
+│   └── price_scaler.pkl
+
+│
+├──Commodities_price.xlsx                              
+│____ price_prediction_avg.xlsx
+│   └── District_to_Base_District_Mapping.xlsx
+│
+├── crop_recommendation.py              
+├── predict_recommended_prices.py       
+├── test_model_across_all_inputs.py     
+│
+├── requirements.txt                  
+├── README.md                                                 
+
