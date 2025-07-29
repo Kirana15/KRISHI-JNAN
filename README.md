@@ -44,6 +44,7 @@ Runs prediction via LSTM model
 
 Output:
 Displays crop names with predicted modal prices at harvest.
+A test report is also attached.
 
 
 ├── models/    
